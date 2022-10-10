@@ -1,0 +1,372 @@
+/*
+    Website's font
+*/
+body {
+    font-family: 'Arvo', serif;
+}
+
+/*
+    Scrollbar
+*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    overflow: overlay
+}
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, #dadeda 11%,#edf2ee 84%);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: radial-gradient(circle, #58e35f 11%,#bcebc2 84%);
+}
+::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+/*
+    Titles & header
+*/
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 34px;
+    float : center;
+    margin-top : 10px;
+    display : inline;
+}
+h2 {
+    margin-top : 35px;
+    margin-bottom : 13px;
+    font-size: 25px;
+}
+#websiteIcon {
+    height : 60px;
+    width : 60px;
+    margin-right : 10px;
+}
+header {
+    background-color: rgb(37, 211, 102);
+    padding : 15px;
+    z-index: 10;
+}
+#headingDiv {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    Main page button
+*/
+#rightButton {
+    width : 60px;
+    height : 60px;
+    margin : 15px;
+    background-color: rgb(176, 185, 176);
+    border-color: rgb(37, 211, 102);
+    display : inline;
+    position : absolute;
+    top : 0.1%;
+    right : 0.1%;
+}
+#rightButton:hover {
+    background-color: rgb(123, 128, 123);
+    border-color: rgb(102, 105, 102);
+}
+#rightButton:active {
+    background-color: rgb(123, 128, 123);
+    border-color: rgb(102, 105, 102);
+}
+
+/*
+    Main part
+*/
+main {
+    padding-bottom : 5%;
+}
+
+.current {
+  background: linear-gradient(360deg, #ffffff 8%,#b8fcc3 30%,#3ff564 65%);
+  background: -moz-linear-gradient(360deg, #ffffff 8%,#b8fcc3 30%,#3ff564 65%);
+  background: -webkit-linear-gradient(360deg, #ffffff 8%,#b8fcc3 30%,#3ff564 65%);
+  border-radius: 20px 20px 20px 20px;
+}
+
+/*
+    Map part
+*/
+#mapOpenLayer {
+    width: 50%;
+    height: 300px;
+}
+.olControlAttribution {
+    bottom: 5px;
+    font-size: 9px;
+}
+#customZoom {
+    z-index: 1001;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+#customZoom a {
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: #369;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#customZoom a:hover {
+    background: #036;
+}
+#customZoomOut {
+    top: 25px;
+}
+#geo {
+    position : relative;
+    top : 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #369;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    padding-left : 12px;
+    padding-right : 12px;
+}
+#geo:hover {
+    background: #036;
+}
+
+/*
+    Center button
+*/
+#centerButton {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#connectSpotify {
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    text-indent: 1.6px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 9px 40px;
+    background: radial-gradient(circle, #32eb4a 25%,#23d143 84%);
+    border: none;
+    box-shadow: 5px 8px 12px #e8e8e8;
+}
+
+/*
+    Playlist
+*/
+.container {
+    display : none;
+    flex-direction: column;
+    height : 300px;
+}
+.titles {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titles > * {
+    flex : 1 1 0;
+}
+#mainHr {
+    height : 4px;
+    border : none;
+    background-color: rgb(77, 143, 77);
+}
+.playlist {
+    flex-grow : 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+.musics{
+    flex-grow : 1;
+    overflow: auto;
+    min-height: 0;
+}
+.music {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: min-content;
+}
+.music > * {
+    flex : 1 1 0;
+}
+.interSong {
+    border : none;
+    background-color: rgb(77, 143, 77);
+}
+#player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+#audio {
+    width : 70%;
+}
+
+/*
+    Buttons
+*/
+.form {
+    background-color: rgb(104, 192, 104);
+    border-color: rgb(104, 192, 104);
+}
+.form:hover {
+    background-color: rgb(80, 146, 80);
+    border-color : rgb(77, 143, 77);
+}
+.form:active {
+    background-color: rgb(80, 146, 80);
+    border-color : rgb(77, 143, 77);
+}
+
+/*
+    Error part
+*/
+.alert {
+    margin : 9px;
+    display : block;
+}
+
+/*
+    Form part
+*/
+.form-group {
+    margin-top: 18px;
+}
+.form-control {
+    margin : auto;
+    width : 98%;
+}
+#buttonForm {
+    float : right;
+    margin-right: 1%;
+    height : 60px;
+    width : 150px;
+    font-size: larger;
+    text-align: center;
+}
+.labelForm {
+    margin-left : 2%;
+    font-size:large;
+    color : darkgreen;
+}
+/*
+    Error labels
+*/
+.errorClass {
+    margin-left: 1%;
+    color : rgb(199, 24, 24);
+}
+
+/*
+    Bottom part
+*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(25, 167, 150);
+    color: white;
+}
+#audioBottom {
+    height: 11%;
+}
+/*
+    Bottom part's text
+*/
+#ratingPart, #createAccount, #connect {
+    display : inline-block;
+    margin-top: 0.8%;
+    margin-left: 0.5%;
+    font-size: large;
+}
+/*
+    Link in bottom part
+*/
+span a:link {
+    color: rgb(11, 79, 224)
+}
+span a:hover {
+    color: rgb(19, 93, 255)
+}
+span a:active {
+    color: rgb(10, 67, 189)
+}
+span a:visited {
+    color: rgb(15, 92, 83);
+}
+
+/*
+    Images in buttons
+*/
+.imgButton {
+    width: 45px;
+    height: 45px;
+    position : relative;
+    right : 15%;
+    bottom : 0%;
+}
+/*
+    Images in the bottom's part
+*/
+.imgRating {
+    margin-left : 5px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+}
+/*
+    Responsive part (phones)
+*/
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 17px;
+    }
+    #websiteIcon {
+        width : 35px;
+        height: 35px;
+    }
+    #rightButton {
+        width : 35px;
+        height : 35px;
+        top : 5px;
+    }
+    .imgButton {
+        width : 25px;
+        height : 25px;
+        right : 7px;
+        bottom : 3px;
+    }
+    #player {
+        padding-top : 10px;
+    }
+  }
