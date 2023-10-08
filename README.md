@@ -1,11 +1,11 @@
 # BioSensation
 
-BioSensation est une application qui donne des playlists selon le biome où l'utilisateur se trouve.
+BioSensation is a WebApp which gives spotify playlists depending on where the user is.
 
 Wiki
 ----
 
-Le wiki est disponible sur [gitlab](-).
+The wiki is available at [wiki](https://github.com/Psemata/BioSensation/wiki).
 
 Authors
 -------
